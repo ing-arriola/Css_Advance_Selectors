@@ -18,9 +18,18 @@
         }
         /* Sudo selector for last child */
         li:last-child{
-            background: green;
+            background: black;
+            color: #fff;
         }
-        
+        /* nth child */
+        li:nth-child(7){
+            background: purple;
+        }
+        /* Just select multiples of 6, also be aware that you can add an offset for 
+        example 6n+5, also you can stylish odd or even numbers by pass (odd) or (even*/
+        li:nth-child(6n){
+            background: orange;
+        }
 
     </style>
 </head>
