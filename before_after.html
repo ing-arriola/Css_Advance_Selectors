@@ -17,6 +17,18 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            
+        }
+        header::before{
+            content: '';
+            background: url('https://source.unsplash.com/1600x900/?computer') no-repeat center center/cover;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
         header > h1{
             font-size: 4rem;
@@ -33,8 +45,8 @@
     <!-- <label for="name" class="is-required">Name</label>
     <input type="text" name="" id=""> -->
     <header>
-        <h1>Hello Guest</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <h1>Jaime Arriola</h1>
+        <p>JavaScript Developer</p>
     </header>
 
     <section>
