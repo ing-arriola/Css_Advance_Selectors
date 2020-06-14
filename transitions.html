@@ -16,12 +16,22 @@
             background: white;
             width: 100px;
             height: 100px;
-            transition-property: background;
+            /* Transition properties break in lineas */
+            /* transition-property: background;
             transition-duration: 2s;
+            transition-timing-function: ease-in-out; */
+            /* Transition properties in a single line */
+            transition: all 2s ease-in-out;
+            /* You can write the previous code as: */
+            /* transition: background,border-radius,height,width 2s ease-in-out */
+            /* But it doesn't works fine */
         }
 
         .box:hover{
             background: red;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
         }
         
     </style>
