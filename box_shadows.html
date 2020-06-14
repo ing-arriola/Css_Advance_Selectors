@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Shadows</title>
     <style>
+        .container{
+            display:flex;
+        }
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: #fff;
+            /* offset-x offset-y color */
+            box-shadow: 10px 10px teal;
+            /* offset-x offset-y blur-radius color */
+            box-shadow: 5px 5px 10px teal;
+            /* negative values */
+            box-shadow: -5px -5px 10px teal;
+            /* offset-x offset-y blur-radius spread-radius color */
+            box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.4);
+            /* inset shadowing */
 
+            /* multiple shadows */
+            box-shadow: 3px 3px 10px teal, -3px -3px 10px blue;
+        }
     </style>
 </head>
 <body>
